@@ -1,0 +1,111 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1624007284541' stop='1624007290139'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1624007284541' status='broken' stop='1624007289988'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.101'/>
+            </parameters>
+            <steps>
+                <step start='1624007284545' status='passed' stop='1624007289831'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='c60117ca-9277-4f1a-b9b9-1116371ea7d3-attachment.json' type='application/json' size='78'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1624007289834' status='broken' stop='1624007289988'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='fea97da5-7c27-45b1-9bb5-43f66ec7e20a-attachment.json' type='application/json' size='52'/>
+                    </attachments>
+                    <steps>
+                        <step start='1624007289976' status='broken' stop='1624007289988'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=91.0.4472.101)</message>
+                <stack-trace>no such window: no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=91.0.4472.101)
+                    at Object.getErrorFromResponseBody (/home/ekovaci/Desktop/Testing_Challenge/node_modules/webdriver/build/utils.js:189:12)
+                    at WebDriverRequest._request (/home/ekovaci/Desktop/Testing_Challenge/node_modules/webdriver/build/request.js:168:31)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Browser.wrapCommandFn (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/shim.js:78:29)
+                    at async Browser.$ (/home/ekovaci/Desktop/Testing_Challenge/node_modules/webdriverio/build/commands/browser/$.js:83:17)
+                    at async Browser.wrapCommandFn (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/shim.js:78:29)
+                    at async LoginPage.login (/home/ekovaci/Desktop/Testing_Challenge/test/pageobjects/login.page.js:19:16)
+                    at async Context.&lt;anonymous> (/home/ekovaci/Desktop/Testing_Challenge/test/specs/intelycare.js:7:9)
+                    at async Context.executeAsync (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/shim.js:136:16)
+                    at async Context.testFrameworkFnWrapper (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1624007289989' status='broken' stop='1624007290083'>
+            <name>should fill the form correctly</name>
+            <title>should fill the form correctly</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.101'/>
+            </parameters>
+            <steps>
+                <step start='1624007289991' status='broken' stop='1624007290083'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='4b873d13-0e50-4d85-955f-875f4eabe17e-attachment.json' type='application/json' size='52'/>
+                    </attachments>
+                    <steps>
+                        <step start='1624007290081' status='broken' stop='1624007290083'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=91.0.4472.101)</message>
+                <stack-trace>no such window: no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=91.0.4472.101)
+                    at Object.getErrorFromResponseBody (/home/ekovaci/Desktop/Testing_Challenge/node_modules/webdriver/build/utils.js:189:12)
+                    at WebDriverRequest._request (/home/ekovaci/Desktop/Testing_Challenge/node_modules/webdriver/build/request.js:168:31)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Browser.wrapCommandFn (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/shim.js:78:29)
+                    at async Browser.$ (/home/ekovaci/Desktop/Testing_Challenge/node_modules/webdriverio/build/commands/browser/$.js:83:17)
+                    at async Browser.wrapCommandFn (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/shim.js:78:29)
+                    at async LoginForm.fillForm (/home/ekovaci/Desktop/Testing_Challenge/test/pageobjects/login.form.js:11:12)
+                    at async Context.&lt;anonymous> (/home/ekovaci/Desktop/Testing_Challenge/test/specs/intelycare.js:12:9)
+                    at async Context.executeAsync (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/shim.js:136:16)
+                    at async Context.testFrameworkFnWrapper (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,107 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1624006263244' stop='1624006265917'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1624006263245' status='broken' stop='1624006265770'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.101'/>
+            </parameters>
+            <steps>
+                <step start='1624006263247' status='passed' stop='1624006265632'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='7baf12f3-24c6-4e21-bacd-b81d72cb3931-attachment.json' type='application/json' size='78'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1624006265634' status='broken' stop='1624006265770'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='2bb6b450-fa5b-4375-bb32-df405bfa1516-attachment.json' type='application/json' size='52'/>
+                    </attachments>
+                    <steps>
+                        <step start='1624006265763' status='broken' stop='1624006265770'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>chrome not reachable
+                  (Session info: chrome=91.0.4472.101)</message>
+                <stack-trace>chrome not reachable: chrome not reachable
+                  (Session info: chrome=91.0.4472.101)
+                    at Object.getErrorFromResponseBody (/home/ekovaci/Desktop/Testing_Challenge/node_modules/webdriver/build/utils.js:189:12)
+                    at WebDriverRequest._request (/home/ekovaci/Desktop/Testing_Challenge/node_modules/webdriver/build/request.js:168:31)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Browser.wrapCommandFn (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/shim.js:78:29)
+                    at async Browser.$ (/home/ekovaci/Desktop/Testing_Challenge/node_modules/webdriverio/build/commands/browser/$.js:83:17)
+                    at async Browser.wrapCommandFn (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/shim.js:78:29)
+                    at async LoginPage.login (/home/ekovaci/Desktop/Testing_Challenge/test/pageobjects/login.page.js:19:16)
+                    at async Context.&lt;anonymous> (/home/ekovaci/Desktop/Testing_Challenge/test/specs/intelycare.js:7:9)
+                    at async Context.executeAsync (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/shim.js:136:16)
+                    at async Context.testFrameworkFnWrapper (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1624006265785' status='broken' stop='1624006265907'>
+            <name>should fill the form</name>
+            <title>should fill the form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.101'/>
+            </parameters>
+            <steps>
+                <step start='1624006265808' status='broken' stop='1624006265907'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='9c9b9505-1967-4a22-9699-a6b1e46dab00-attachment.json' type='application/json' size='52'/>
+                    </attachments>
+                    <steps>
+                        <step start='1624006265901' status='broken' stop='1624006265907'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>chrome not reachable
+                  (Session info: chrome=91.0.4472.101)</message>
+                <stack-trace>chrome not reachable: chrome not reachable
+                  (Session info: chrome=91.0.4472.101)
+                    at Object.getErrorFromResponseBody (/home/ekovaci/Desktop/Testing_Challenge/node_modules/webdriver/build/utils.js:189:12)
+                    at WebDriverRequest._request (/home/ekovaci/Desktop/Testing_Challenge/node_modules/webdriver/build/request.js:168:31)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Browser.wrapCommandFn (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/shim.js:78:29)
+                    at async Browser.$ (/home/ekovaci/Desktop/Testing_Challenge/node_modules/webdriverio/build/commands/browser/$.js:83:17)
+                    at async Browser.wrapCommandFn (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/shim.js:78:29)
+                    at async LoginForm.fillForm (/home/ekovaci/Desktop/Testing_Challenge/test/pageobjects/login.form.js:8:12)
+                    at async Context.&lt;anonymous> (/home/ekovaci/Desktop/Testing_Challenge/test/specs/intelycare.js:12:9)
+                    at async Context.executeAsync (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/shim.js:136:16)
+                    at async Context.testFrameworkFnWrapper (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

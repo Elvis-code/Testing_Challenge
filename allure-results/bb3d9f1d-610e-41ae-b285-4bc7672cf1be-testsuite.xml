@@ -1,0 +1,137 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1624006435728' stop='1624006442161'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1624006435728' status='passed' stop='1624006441936'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.101'/>
+            </parameters>
+            <steps>
+                <step start='1624006435734' status='passed' stop='1624006440985'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='972f9111-0e90-4cad-a4b5-82a30de113b8-attachment.json' type='application/json' size='78'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1624006440986' status='passed' stop='1624006441052'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='fe0ddc40-b67f-49e2-8810-585a5e50477d-attachment.json' type='application/json' size='52'/>
+                        <attachment title='Response' source='03973c01-617c-4500-9660-0b0977b43982-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1624006441084' status='passed' stop='1624006441218'>
+                    <name>POST /session/:sessionId/element/0fd59cd4-d549-41a1-9de5-b7c419c0f049/clear</name>
+                    <title>POST /session/:sessionId/element/0fd59cd4-d549-41a1-9de5-b7c419c0f049/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1624006441224' status='passed' stop='1624006441398'>
+                    <name>POST /session/:sessionId/element/0fd59cd4-d549-41a1-9de5-b7c419c0f049/value</name>
+                    <title>POST /session/:sessionId/element/0fd59cd4-d549-41a1-9de5-b7c419c0f049/value</title>
+                    <attachments>
+                        <attachment title='Request' source='8eb8a556-28f8-4fdf-9fe6-5c31cb033467-attachment.json' type='application/json' size='37'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1624006441399' status='passed' stop='1624006441437'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='b0156634-a637-41fd-b030-7ed6b0e26ad4-attachment.json' type='application/json' size='52'/>
+                        <attachment title='Response' source='410ea8db-7e52-4358-96e7-7d57ffd1a4a7-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1624006441446' status='passed' stop='1624006441533'>
+                    <name>POST /session/:sessionId/element/fe4c299f-c468-4e7d-abd6-5bd40fb34e0d/clear</name>
+                    <title>POST /session/:sessionId/element/fe4c299f-c468-4e7d-abd6-5bd40fb34e0d/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1624006441533' status='passed' stop='1624006441714'>
+                    <name>POST /session/:sessionId/element/fe4c299f-c468-4e7d-abd6-5bd40fb34e0d/value</name>
+                    <title>POST /session/:sessionId/element/fe4c299f-c468-4e7d-abd6-5bd40fb34e0d/value</title>
+                    <attachments>
+                        <attachment title='Request' source='9dc72967-eb39-40f2-aeae-62fed0e7b835-attachment.json' type='application/json' size='25'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1624006441715' status='passed' stop='1624006441749'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='5a58fa48-2f0d-4cc9-912d-190bf45541ad-attachment.json' type='application/json' size='67'/>
+                        <attachment title='Response' source='4e541c0a-3780-4d45-bb8e-c6248cb48714-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1624006441753' status='passed' stop='1624006441935'>
+                    <name>POST /session/:sessionId/element/775b19bf-1046-4745-87df-5e6afd163487/click</name>
+                    <title>POST /session/:sessionId/element/775b19bf-1046-4745-87df-5e6afd163487/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1624006441936' status='broken' stop='1624006442153'>
+            <name>should fill the form</name>
+            <title>should fill the form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.101'/>
+            </parameters>
+            <steps>
+                <step start='1624006441949' status='broken' stop='1624006442153'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='413d52ad-0524-4fb9-bc7e-2fb0c8faf845-attachment.json' type='application/json' size='52'/>
+                    </attachments>
+                    <steps>
+                        <step start='1624006442146' status='broken' stop='1624006442153'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>invalid selector: An invalid or illegal selector was specified
+                  (Session info: chrome=91.0.4472.101)</message>
+                <stack-trace>invalid selector: invalid selector: An invalid or illegal selector was specified
+                  (Session info: chrome=91.0.4472.101)
+                    at Object.getErrorFromResponseBody (/home/ekovaci/Desktop/Testing_Challenge/node_modules/webdriver/build/utils.js:189:12)
+                    at WebDriverRequest._request (/home/ekovaci/Desktop/Testing_Challenge/node_modules/webdriver/build/request.js:168:31)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Browser.wrapCommandFn (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/shim.js:78:29)
+                    at async Browser.$ (/home/ekovaci/Desktop/Testing_Challenge/node_modules/webdriverio/build/commands/browser/$.js:83:17)
+                    at async Browser.wrapCommandFn (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/shim.js:78:29)
+                    at async LoginForm.fillForm (/home/ekovaci/Desktop/Testing_Challenge/test/pageobjects/login.form.js:8:12)
+                    at async Context.&lt;anonymous> (/home/ekovaci/Desktop/Testing_Challenge/test/specs/intelycare.js:12:9)
+                    at async Context.executeAsync (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/shim.js:136:16)
+                    at async Context.testFrameworkFnWrapper (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
