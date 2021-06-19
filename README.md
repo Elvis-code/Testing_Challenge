@@ -1,4 +1,4 @@
-Testing the page of Intelycare.com (The Login page) with Webdriverio.
+The Automate Testing of tha page Intelycare.com (The Login page) with Webdriverio.
 
 To do this test the first command use is npm init -y.
 
