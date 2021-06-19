@@ -1,0 +1,111 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1624108146120' stop='1624108163067'>
+    <name>When user is registred already</name>
+    <title>When user is registred already</title>
+    <test-cases>
+        <test-case start='1624108146121' status='failed' stop='1624108163063'>
+            <name>Should load the Login Page not the Sign Up</name>
+            <title>Should load the Login Page not the Sign Up</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.101'/>
+            </parameters>
+            <steps>
+                <step start='1624108146125' status='passed' stop='1624108152073'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='eccdf807-e672-4222-b3cd-7d02187f02f3-attachment.json' type='application/json' size='78'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1624108152074' status='passed' stop='1624108152105'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='e4192a8f-3b35-4528-b08a-a0bc94fed857-attachment.json' type='application/json' size='52'/>
+                        <attachment title='Response' source='3059a897-1ef8-48cd-beea-5019d31620f3-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1624108152121' status='passed' stop='1624108152214'>
+                    <name>POST /session/:sessionId/element/738fd737-f9de-44d1-925f-b2ece6a85ad1/clear</name>
+                    <title>POST /session/:sessionId/element/738fd737-f9de-44d1-925f-b2ece6a85ad1/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1624108152220' status='passed' stop='1624108152465'>
+                    <name>POST /session/:sessionId/element/738fd737-f9de-44d1-925f-b2ece6a85ad1/value</name>
+                    <title>POST /session/:sessionId/element/738fd737-f9de-44d1-925f-b2ece6a85ad1/value</title>
+                    <attachments>
+                        <attachment title='Request' source='b79d52bc-c249-4db4-b2be-3f76e7cb9f9d-attachment.json' type='application/json' size='36'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1624108152465' status='passed' stop='1624108152501'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='d90ae8a1-b0c4-4486-aa92-a28df2b6ec34-attachment.json' type='application/json' size='52'/>
+                        <attachment title='Response' source='9158f1e3-3213-4bae-a0b0-91d28d5be178-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1624108152511' status='passed' stop='1624108152588'>
+                    <name>POST /session/:sessionId/element/f93930c5-81ac-4714-86ff-58557f403e1c/clear</name>
+                    <title>POST /session/:sessionId/element/f93930c5-81ac-4714-86ff-58557f403e1c/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1624108152588' status='passed' stop='1624108152767'>
+                    <name>POST /session/:sessionId/element/f93930c5-81ac-4714-86ff-58557f403e1c/value</name>
+                    <title>POST /session/:sessionId/element/f93930c5-81ac-4714-86ff-58557f403e1c/value</title>
+                    <attachments>
+                        <attachment title='Request' source='bddd7d9d-8917-496f-bbfb-5933ee4649d3-attachment.json' type='application/json' size='22'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1624108152768' status='passed' stop='1624108152797'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='051b09c9-1ea5-46d0-9277-801834e9b40b-attachment.json' type='application/json' size='67'/>
+                        <attachment title='Response' source='c96b7ea4-d892-4ead-91df-3bbdbffb24bc-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1624108152803' status='passed' stop='1624108153018'>
+                    <name>POST /session/:sessionId/element/c8298116-8eba-40b6-b3ef-f6883725b6f4/click</name>
+                    <title>POST /session/:sessionId/element/c8298116-8eba-40b6-b3ef-f6883725b6f4/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1624108163044' status='failed' stop='1624108163063'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Expect  to be existing
+                
+                Expected: "existing"
+                Received: "not existing"</message>
+                <stack-trace>Error: Expect  to be existing
+                
+                Expected: "existing"
+                Received: "not existing"
+                    at Context.&lt;anonymous> (/home/ekovaci/Desktop/Testing_Challenge/test/specs/email.taken.js:11:44)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Context.executeAsync (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/shim.js:136:16)
+                    at async Context.testFrameworkFnWrapper (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

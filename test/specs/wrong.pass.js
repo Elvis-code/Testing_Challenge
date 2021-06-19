@@ -5,7 +5,7 @@ describe('Password Format', () => {
        
         await LoginPage.open();
         await LoginPage.login('user3@mailinator.com', 'user123');
-
+        await expect(LoginPage.flashText).toBeExisting();
         await  expect(LoginPage.flashText).toHaveTextContaining(
             'Password must contain at least one uppercase, and one number.');       // The message should be equal to the message that page shows 
 

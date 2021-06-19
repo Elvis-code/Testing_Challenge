@@ -4,7 +4,7 @@ const LoginForm = require('../pageobjects/login.form');
 describe('User can create account', () => {
     it('using valid credentials', async () => {
         await LoginPage.open();   //The page that allows the new user to create an account 
-        await LoginPage.login('user4@mailinator.com', 'User123%');
+        await LoginPage.login('user10@mailinator.com', 'User123%');
     });
     
     

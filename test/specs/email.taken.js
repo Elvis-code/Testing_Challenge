@@ -8,7 +8,7 @@ describe('When user is registred already', () => {          // Controls if email
        
         await LoginPage.open();
         await LoginPage.login('user1@mailinator.com', 'User1%');
-
+        await expect(LoginPage.flashText).toBeExisting();
         await  expect(LoginPage.flashText).toHaveTextContaining(
             'Email Taken');
     })

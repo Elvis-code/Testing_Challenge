@@ -11,7 +11,7 @@ class LoginPage extends Page {
     get inputPassword () { return $('#input_1') }
     get btnSubmit () { return $('button[type="submit"]') }
     get flashText (){return $ ('#snackbar-content')};
-    get flashText1 (){return $ ('#snackbar-content')};
+ 
     /**
      * a method to encapsule automation code to interact with the page
      * e.g. to login using username and password
