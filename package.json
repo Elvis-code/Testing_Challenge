@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@wdio/cli": "^7.7.3",
+    "allure-commandline": "^2.13.8",
     "webdriverio": "^7.7.3"
   },
   "devDependencies": {
@@ -19,6 +20,7 @@
     "@wdio/mocha-framework": "^7.7.3",
     "@wdio/spec-reporter": "^7.7.3",
     "chromedriver": "^91.0.1",
+    "wdio-allure-reporter": "^0.8.3",
     "wdio-chromedriver-service": "^7.1.0"
   }
 }

@@ -230,6 +230,7 @@ exports.config = {
     afterTest: function(test, context, { error, result, duration, passed, retries }) {
         if (!passed) {
             browser.takeScreenshot();
+            browser.saveScreenshot('./test/Screenshots/screenshot.png');
         }
     },
 
