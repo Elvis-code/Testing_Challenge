@@ -1,0 +1,51 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1624263965523' stop='1624263965557'>
+    <name>The Form on the basic screen info </name>
+    <title>The Form on the basic screen info </title>
+    <test-cases>
+        <test-case start='1624263965523' status='broken' stop='1624263965554'>
+            <name>should be filled correctly</name>
+            <title>should be filled correctly</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.101'/>
+            </parameters>
+            <steps>
+                <step start='1624263965525' status='broken' stop='1624263965554'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='042bce32-f0ab-4dcd-b8b3-c79507677f8b-attachment.json' type='application/json' size='67'/>
+                    </attachments>
+                    <steps>
+                        <step start='1624263965538' status='broken' stop='1624263965554'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>this.contButton.isClickable is not a function</message>
+                <stack-trace>TypeError: this.contButton.isClickable is not a function
+                    at Browser.&lt;anonymous> (/home/ekovaci/Desktop/Testing_Challenge/test/pageobjects/login.form.js:15:50)
+                    at Timer._tick (/home/ekovaci/Desktop/Testing_Challenge/node_modules/webdriverio/build/utils/Timer.js:76:29)
+                    at Timer._start (/home/ekovaci/Desktop/Testing_Challenge/node_modules/webdriverio/build/utils/Timer.js:45:18)
+                    at new Timer (/home/ekovaci/Desktop/Testing_Challenge/node_modules/webdriverio/build/utils/Timer.js:38:14)
+                    at Browser.waitUntil (/home/ekovaci/Desktop/Testing_Challenge/node_modules/webdriverio/build/commands/browser/waitUntil.js:62:17)
+                    at Browser.wrapCommandFn (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/shim.js:78:38)
+                    at async LoginForm.buttonEnb (/home/ekovaci/Desktop/Testing_Challenge/test/pageobjects/login.form.js:15:4)
+                    at async Context.&lt;anonymous> (/home/ekovaci/Desktop/Testing_Challenge/test/specs/intelycare.js:18:9)
+                    at async Context.executeAsync (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/shim.js:136:16)
+                    at async Context.testFrameworkFnWrapper (/home/ekovaci/Desktop/Testing_Challenge/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

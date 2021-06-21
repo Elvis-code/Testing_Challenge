@@ -11,8 +11,9 @@ class LoginForm extends Page {
     get checkBtn2(){return $('//md-input-container/md-checkbox/div')}
     get contButton(){return $('#AP_Basic_Info_continue')}
     
+
 async fillForm (Fname,Lname,Mobnum,zipCode) {
-        
+
     await (await this.inputFname).setValue(Fname);
     await (await this.inputLname).setValue(Lname);
     await (await this.inputMobnum).setValue(Mobnum);
