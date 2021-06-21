@@ -10,6 +10,7 @@ class LoginForm extends Page {
     get radioBtn2 (){return $('//div[8]/md-input-container/md-radio-group/md-radio-button[3]/div/div')}
     get checkBtn2(){return $('//md-input-container/md-checkbox/div')}
     get contButton(){return $('#AP_Basic_Info_continue')}
+    get phonescreen(){return $('//b[contains(.,"Confirm your phone number")]')}
     
 
 async fillForm (Fname,Lname,Mobnum,zipCode) {
