@@ -14,8 +14,7 @@ describe('The Form on the basic screen info ', () => {          // The basic inf
    
     it('should be filled correctly', async () => {
         await expect(LoginForm.contButton).toBeEnabled();
-        await LoginForm.fillForm('Firstname','Lastname','7589577506','02090'); // The user fill the fields with required information about personal information and get the Continue clickable
-        
+        await LoginForm.fillForm('Firstname','Lastname','7589577506','02090'); // The user fill the fields with required information about personal information and get the Continue clickable   
         browser.pause(10000);
         await expect(LoginForm.phonescreen).toBeExisting();
         await  expect(LoginForm.phonescreen).toHaveTextContaining(

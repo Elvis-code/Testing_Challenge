@@ -10,7 +10,7 @@ describe('When user is registred already', () => {          // The page that lea
 
         browser.url('https://portal.intelycare.com/apply/career.html?step=Login')
 
-        await LoginPage.login('user1@gmail.com', 'Elpas123%');              // The user fill the email and password again with existed credentials
+        await LoginPage.login('user@mailinator.com', 'User123%');              // The user fill the email and password again with existed credentials
 
 
     })

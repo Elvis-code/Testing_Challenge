@@ -1,4 +1,5 @@
 const video = require('wdio-video-reporter');
+
 exports.config = {
     //
     // ====================
