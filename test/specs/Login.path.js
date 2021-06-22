@@ -1,7 +1,7 @@
 const LoginPage = require('../pageobjects/login.page'); 
 
 
-describe('When user is registred already', () => {          // The page that leads to Login In Page  when user already exists
+describe('When user is registered already', () => {          // The page that leads to Login In Page  when user already exists
     
     it("Should load the Login Page not the Sign Up", async() =>{        
        

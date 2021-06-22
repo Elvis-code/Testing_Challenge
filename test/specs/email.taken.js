@@ -2,7 +2,7 @@
 const LoginPage = require('../pageobjects/login.page'); 
 
 
-describe('When user is registred already', () => {          // Controls if email already exist and must get the 'Email Taken' text.
+describe('When user is registered already', () => {          // Controls if email already exist and must get the 'Email Taken' text.
     
     it("Should return Email Taken", async() =>{
        
